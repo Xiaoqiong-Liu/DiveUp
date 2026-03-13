@@ -13,7 +13,7 @@
 
 ---
 
-> **Abstract:** Current feature upsampling relies on intra-model self-reconstruction, often overfitting to source artifacts. We introduce DiveUp, an encoder-agnostic framework that utilizes multi-VFM relational guidance to break single-model dependency. By employing a universal local center-of-mass (COM) field and a spikiness-aware selection strategy, DiveUp aggregates structural consensus from diverse VFMs. This jointly-trained model achieves state-of-the-art zero-shot upsampling across diverse spaces like SigLIP and DINOv2 without per-model retraining..
+> **Abstract:** Current feature upsampling relies on intra-model self-reconstruction, often overfitting to source artifacts. We introduce DiveUp, an encoder-agnostic framework that utilizes multi-VFM relational guidance to break single-model dependency. By employing a universal local center-of-mass (COM) field and a spikiness-aware selection strategy, DiveUp aggregates structural consensus from diverse VFMs. This jointly-trained model achieves state-of-the-art zero-shot upsampling across diverse spaces like SigLIP and DINOv2 without per-model retraining.
 
 <div align="center">
   <img src="teaser.png" alt="DiveUp Teaser" width="90%">
