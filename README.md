@@ -17,7 +17,7 @@
 
 <div align="center">
   <img src="teaser.png" alt="DiveUp Teaser" width="90%">
-  <p><em>Qualitative comparison of Dense Depth Estimation and Semantic Segmentation. DiveUp strictly preserves the original VFM semantics while generating remarkably crisp and accurate object boundaries.</em></p>
+  <p><em>Comparison of upsampled features from different methods. DiveUp is robust against feature noises.</em></p>
 </div>
 
 
