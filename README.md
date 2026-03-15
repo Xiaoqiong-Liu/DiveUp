@@ -61,7 +61,7 @@ upsampled = diveup(image, lr_features, target_size)
 | `lr_features`  | `(B, C, h, w)` | Low-res features from your backbone.|
 | `target_size`  | `(H_o, W_o)`   | Desired output feature map size.    |
 
-For full training and evaluation code, see the main repository.
+Full training and evaluation code: TBD.
 
 ---
 
