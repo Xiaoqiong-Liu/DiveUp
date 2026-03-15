@@ -25,7 +25,7 @@
 
 ---
 
-## 🎯 TL;DR — Hub model usage
+## 🎯 Quick Start — Load and use DiveUp
 
 **Three steps:**
 
