@@ -95,7 +95,7 @@ See the main repository for datasets, configs, and training instructions.
 DiveUp is built on the following open-source works. We thank the authors for releasing their code and models.
 
 - **[NAF](https://github.com/valeoai/NAF)** — *NAF: Zero-Shot Feature Upsampling via Neighborhood Attention Filtering* (Chambon et al., Valeo.ai). We use the NAF architecture and neighborhood attention design.
-- **[JAFAR](https://github.com/PaulCouairon/JAFAR)** — Joint Attention for Feature upsampling and Restoration (Couairon et al.). We build on ideas and code from JAFAR for feature upsampling and multi-backbone training.
+- **[JAFAR](https://github.com/PaulCouairon/JAFAR)** — Joint Attention for Feature upsampling and Restoration (Couairon et al.). 
 
 We also thank [NATTEN](https://github.com/SHI-Labs/NATTEN) for the efficient neighborhood attention implementation.
 
