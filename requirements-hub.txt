@@ -1,0 +1,5 @@
+# Minimal deps for torch.hub.load("owner/repo", "diveup")
+torch>=2.0
+natten  # pip install natten -f https://shi-labs.com/natten/wheels
+einops
+numpy
