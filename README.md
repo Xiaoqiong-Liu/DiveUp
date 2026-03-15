@@ -20,4 +20,82 @@
   <p><em>Comparison of upsampled features from different methods. DiveUp is robust against feature noises.</em></p>
 </div>
 
+## 📢 News
+- **[2026-03]** 🔥 We released the inference code and pre-trained weights for DiveUp!
+
+---
+
+## 🎯 TL;DR — Hub model usage
+
+**Three steps:**
+
+1. **Install natten** (required for neighborhood attention):
+   ```bash
+   pip install torch natten -f https://shi-labs.com/natten/wheels
+   ```
+2. **Load DiveUp** via `torch.hub` (no clone needed).
+3. **Upsample features**: pass image, low-res features, and target size.
+
+**Usage:**
+
+```python
+import torch
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
+diveup = torch.hub.load("Xiaoqiong-Liu/DiveUp", "diveup", pretrained=True, device=device)
+diveup.eval()
+
+# High-resolution image (B, 3, H, W)
+image = ...
+# Low-resolution features from any VFM (B, C, h, w)
+lr_features = ...
+# Desired output spatial size (H_o, W_o)
+target_size = (H_o, W_o)
+
+# High-resolution features (B, C, H_o, W_o)
+upsampled = diveup(image, lr_features, target_size)
+```
+
+**Inputs:**
+
+| Argument       | Shape / type   | Description                          |
+|----------------|----------------|--------------------------------------|
+| `image`        | `(B, 3, H, W)` | High-res RGB image (e.g. 512×512).  |
+| `lr_features`  | `(B, C, h, w)` | Low-res features from your backbone.|
+| `target_size`  | `(H_o, W_o)`   | Desired output feature map size.    |
+
+For full training and evaluation code, see the main repository.
+
+---
+
+## 🔨 Setup
+
+**Inference only (this repo / `torch.hub`):**
+
+- **Python** 3.8+
+- **PyTorch** ≥ 2.0
+- **NATTEN** (Neighborhood Attention): install from the official wheels (required for DiveUp):
+
+  ```bash
+  pip install torch
+  pip install natten -f https://shi-labs.com/natten/wheels
+  ```
+
+  Pick the wheel that matches your PyTorch and CUDA versions (see [NATTEN](https://github.com/SHI-Labs/NATTEN)).
+
+- Optional: `einops`, `numpy` (used by the model).
+
+**Full codebase (training & evaluation):**  
+See the main repository for datasets, configs, and training instructions.
+
+---
+
+## 👍 Acknowledgements
+
+DiveUp is built on the following open-source works. We thank the authors for releasing their code and models.
+
+- **[NAF](https://github.com/valeoai/NAF)** — *NAF: Zero-Shot Feature Upsampling via Neighborhood Attention Filtering* (Chambon et al., Valeo.ai). We use the NAF architecture and neighborhood attention design.
+- **[JAFAR](https://github.com/PaulCouairon/JAFAR)** — Joint Attention for Feature upsampling and Restoration (Couairon et al.). We build on ideas and code from JAFAR for feature upsampling and multi-backbone training.
+
+We also thank [NATTEN](https://github.com/SHI-Labs/NATTEN) for the efficient neighborhood attention implementation.
 
