@@ -29,10 +29,7 @@
 
 **Three steps:**
 
-1. **Install natten** (required for neighborhood attention):
-   ```bash
-   pip install torch natten -f https://shi-labs.com/natten/wheels
-   ```
+1. **Install NATTEN** (required for neighborhood attention). Installation depends on your PyTorch and CUDA versions; see the [official NATTEN install guide](https://natten.org/install/).
 2. **Load DiveUp** via `torch.hub` (no clone needed).
 3. **Upsample features**: pass image, low-res features, and target size.
 
@@ -74,14 +71,7 @@ For full training and evaluation code, see the main repository.
 
 - **Python** 3.8+
 - **PyTorch** ≥ 2.0
-- **NATTEN** (Neighborhood Attention): install from the official wheels (required for DiveUp):
-
-  ```bash
-  pip install torch
-  pip install natten -f https://shi-labs.com/natten/wheels
-  ```
-
-  Pick the wheel that matches your PyTorch and CUDA versions (see [NATTEN](https://github.com/SHI-Labs/NATTEN)).
+- **NATTEN** (Neighborhood Attention), required for DiveUp. Installation varies by PyTorch and CUDA version; follow the **[official NATTEN install guide](https://natten.org/install/)**.
 
 - Optional: `einops`, `numpy` (used by the model).
 
