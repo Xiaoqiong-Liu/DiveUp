@@ -89,3 +89,15 @@ DiveUp is built on the following open-source works. We thank the authors for rel
 
 We also thank [NATTEN](https://github.com/SHI-Labs/NATTEN) for the efficient neighborhood attention implementation.
 
+## 🎓 Citation
+
+If you find DiveUp useful for your research, please consider citing our paper:
+
+```bibtex
+@article{liu2026diveup,
+  title={DiveUp: Learning Feature Upsampling from Diverse Vision Foundation Models},
+  author={Liu, Xiaoqiong and Fan, Heng},
+  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  year={2026}
+}
+
