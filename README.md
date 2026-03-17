@@ -94,10 +94,13 @@ We also thank [NATTEN](https://github.com/SHI-Labs/NATTEN) for the efficient nei
 If you find DiveUp useful for your research, please consider citing our paper:
 
 ```bibtex
-@article{liu2026diveup,
-  title={DiveUp: Learning Feature Upsampling from Diverse Vision Foundation Models},
-  author={Liu, Xiaoqiong and Fan, Heng},
-  journal={arXiv preprint arXiv:2603.13571},
-  year={2026}
+@misc{liu2026diveuplearningfeatureupsampling,
+      title={DiveUp: Learning Feature Upsampling from Diverse Vision Foundation Models}, 
+      author={Xiaoqiong Liu and Heng Fan},
+      year={2026},
+      eprint={2603.13571},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2603.13571}, 
 }
 
