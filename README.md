@@ -97,7 +97,7 @@ If you find DiveUp useful for your research, please consider citing our paper:
 @article{liu2026diveup,
   title={DiveUp: Learning Feature Upsampling from Diverse Vision Foundation Models},
   author={Liu, Xiaoqiong and Fan, Heng},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  journal={arXiv preprint arXiv:2603.13571},
   year={2026}
 }
 
